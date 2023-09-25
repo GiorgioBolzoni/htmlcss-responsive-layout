@@ -22,7 +22,7 @@ body{
 }
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 .debug{
     border: 1px solid red;
@@ -56,11 +56,11 @@ li>a{
     padding-right: 10px;
 }
 .py-20{
-    padding-top: 0 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .px-20{
-    padding-left: 0 20px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 .even-section{
@@ -87,7 +87,7 @@ li>a{
 }
 
 /* TEXT */
-.text-center {
+.text-center{
     text-align: center;
 }
 .text-primary{
@@ -101,6 +101,13 @@ li>a{
 }
 .line-height{
     line-height: 1.5;
+}
+h3{
+    margin-top: 20px;
+}
+.icon{
+    font-size: 3em;
+    color: var(--color-secondary-color);
 }
 /* BOTTONI */
 .btn{
@@ -131,6 +138,9 @@ li>a{
 .sp-between{
     justify-content: space-between;
 }
+.column{
+    flex-direction: column;
+}
 /************************************************
     SITE SECTIONS
  ************************************************/
@@ -152,6 +162,7 @@ header{
     position: relative;
     top: 10px;
 }
+
 #intro{
     margin-top: 100px;
 }
