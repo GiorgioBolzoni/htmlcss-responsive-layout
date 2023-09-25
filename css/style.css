@@ -1,0 +1,162 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+	--color-secondary-color: #0084fd;
+	--color-dark-color: #333333;
+	--color-light-color: #ffffff;
+	--color-primary-color: #9792e4;
+	--color-bg-card: #b5ddff;
+	--color-contrast-color: #fcc060;
+	--color-text: #424242;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    color: var(--color-light-color);
+    color: var(--color-text);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.debug{
+    border: 1px solid red;
+}
+ul{
+    list-style: none;
+}
+li>a{
+    text-decoration: none;
+    color: var(--color-light-color);
+    margin: 0 10px;
+}
+
+/************************************************
+    UTILITIES
+ ************************************************/
+
+/* LAYOUT */
+.container{
+    padding: 5px;
+}
+.col{
+    padding: 10px;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.py-20{
+    padding-top: 0 20px;
+    padding-bottom: 20px;
+}
+.px-20{
+    padding-left: 0 20px;
+    padding-right: 20px;
+}
+.even-section{
+    background-color: var(--color-primary-color);
+}
+.small-border-rounded{
+    border-radius: 10px;
+}
+.big-border-rounded{
+    border-radius: 20px;
+}
+.circle{
+    border-radius: 50%;
+}
+/* SFONDI */
+.bg-light{
+    background-color: var(--color-light-color);
+}
+.bg-card{
+    background-color: var(--color-bg-card);
+}
+.bg-primary{
+    background-color: var(--color-primary-color);
+}
+
+/* TEXT */
+.text-center {
+    text-align: center;
+}
+.text-primary{
+    color: var(--color-primary-color);
+}
+.text-secondary{
+    color: var(--color-secondary-color);
+}
+.text-light{
+    color: var(--color-light-color);
+}
+.line-height{
+    line-height: 1.5;
+}
+/* BOTTONI */
+.btn{
+    padding: 6px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-light-color);
+    background-color: var(--color-primary-color);
+    border-radius: 15px;
+}
+.btn-secondary{
+    background-color: var(--color-secondary-color)
+}
+/* FLEXBOX */
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.align-start{
+    align-content: flex-start;
+}
+.align-center{
+    align-content: center;
+}
+.f-center{
+    justify-content: center;
+}
+.sp-between{
+    justify-content: space-between;
+}
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+/* HEADER */
+header{
+    background-color: var(--color-secondary-color);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    color: var(--color-light-color);
+    top: 0;
+    z-index: 1000;
+}
+/* ul{
+    display: none;
+} */
+/* MAIN */
+.card-image{
+    position: relative;
+    top: 10px;
+}
+#intro{
+    margin-top: 100px;
+}
+/* HEADER */
+footer{
+    background-color: var(--color-dark-color);
+    color: var(--color-light-color);
+}
