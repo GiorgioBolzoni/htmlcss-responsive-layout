@@ -105,9 +105,16 @@ li>a{
 h3{
     margin-top: 20px;
 }
+h2{
+    margin-top: 20px;
+    font-size: 2em;
+}
 .icon{
     font-size: 3em;
     color: var(--color-secondary-color);
+}
+.font-x2-5{
+    font-size: 2.5em;
 }
 /* BOTTONI */
 .btn{
@@ -165,6 +172,25 @@ header{
 
 #intro{
     margin-top: 100px;
+}
+#arrow-down{
+    width: 10vw;
+    height: 10vw;
+}
+#testimonials{
+    font-size: 1em;
+    font-weight: 400;
+}
+.testimonial-img{
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+}
+.testimonial-card{
+    margin: 20px 0 40px 0;
+}
+#reverse{
+   
 }
 /* HEADER */
 footer{
