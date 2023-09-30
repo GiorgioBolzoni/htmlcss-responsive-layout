@@ -42,7 +42,7 @@ li>a{
 
 /* LAYOUT */
 .container{
-    padding: 5px;
+    width: 90%;
 }
 .col{
     padding: 10px;
@@ -63,6 +63,9 @@ li>a{
     padding-left: 20px;
     padding-right: 20px;
 }
+.margin-btt-40{
+    margin-bottom: 40px;
+}
 .even-section{
     background-color: var(--color-primary-color);
 }
@@ -73,7 +76,18 @@ li>a{
     border-radius: 20px;
 }
 .circle{
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+}
+.width-100{
+    width: 100%;
+}
+.width-logo{
+    width: 100px;
+}
+.width-90{
+    width: 90%;
 }
 /* SFONDI */
 .bg-light{
@@ -104,6 +118,7 @@ li>a{
 }
 h3{
     margin-top: 20px;
+    font-size: 2em;
 }
 h2{
     margin-top: 20px;
@@ -118,26 +133,45 @@ h2{
 }
 /* BOTTONI */
 .btn{
-    padding: 6px 15px;
+    padding: 10px 40px;
     display: inline-block;
     text-decoration: none;
     color: var(--color-light-color);
     background-color: var(--color-primary-color);
-    border-radius: 15px;
+    border-radius: 25px;
 }
 .btn-secondary{
     background-color: var(--color-secondary-color)
 }
+.btn-white{
+    padding: 8px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-light-color);
+    border-radius: 25px;
+}
 /* FLEXBOX */
 .d-flex{
     display: flex;
-    flex-flow: row wrap;
 }
 .align-start{
     align-content: flex-start;
 }
+.f-end{
+    justify-content: end;
+}
+.align-start{
+    align-content: start;
+}
 .align-center{
     align-content: center;
+}
+.align-end{
+    align-content: end;
+}
+.f-start{
+    justify-content: start;
 }
 .f-center{
     justify-content: center;
@@ -147,6 +181,15 @@ h2{
 }
 .column{
     flex-direction: column;
+}
+.align-it-end{
+    align-items: end;
+}
+.align-it-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 /************************************************
     SITE SECTIONS
@@ -160,6 +203,9 @@ header{
     color: var(--color-light-color);
     top: 0;
     z-index: 1000;
+}
+.long-menu{
+    display: none;
 }
 /* ul{
     display: none;
@@ -182,9 +228,11 @@ header{
     font-weight: 400;
 }
 .testimonial-img{
-    width: 50vw;
-    height: 50vw;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto 1rem;
 }
 .testimonial-card{
     margin: 20px 0 40px 0;
@@ -192,8 +240,98 @@ header{
 #reverse{
    
 }
-/* HEADER */
+.number{
+    font-size: 3em;
+}
+/* FOOTER */
 footer{
     background-color: var(--color-dark-color);
     color: var(--color-light-color);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px){
+    .col-x2{
+        width: calc(((100% / 3) *2));
+    }
+    .col-x1{
+        width: calc((100% / 3));
+    }
+    .big-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        height: 100%;
+    }
+    .testimonial-card{
+        flex-wrap: nowrap;
+    }
+    .testimonials-text-card{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    
+    #benefits > .container{
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .benefit-card{
+        width: calc((100% / 2) - 8px);
+        margin-left: 3px;
+    }
+}
+
+    /* .col{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+
+@media screen and (min-width: 768px){
+    nav{
+     max-width: 1200px
+    }
+    .burger-menu{
+        display: none;
+    }
+    .long-menu{
+        display: block;
+    }
+    .container{
+        max-width: 1200px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+    }
+    .card-text-img{
+        display: flex;
+    }
+    .card-image{
+        display: flex;
+        justify-content: end;
+    }
+    .card-text{
+        width: 150%;
+    }
+    .strategy-flex{
+        display: flex;
+        align-items: end;
+    }
+    .strategy-division {
+        width: 70%;
+    }
+    .circle-arrow{
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+    }
+    .benefit-card{
+        width: calc((100% / 3) - 8px);
+    }
 }
